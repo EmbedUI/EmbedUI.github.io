@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    webkit-font-smoothing: antialiased!important;
+}
+
+*,
+ :after,
+ :before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 47px;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: #1F212D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.hero_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero_content {
+    color: white;
+}
+
+.hero_content h1 {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.hero_content p {
+    max-width: 320px;
+    text-align: center;
+}
+
+.beta_tag {
+    color: #000;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 4px 8px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero_primarybtn {
+    padding: 12px 16px;
+    background: #FDFDFD;
+    /* border-radius: 4px solid white; */
+    text-decoration: none;
+    width: 300px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+.hero_primarybtn:hover,
+.hero_primarybtn:focus,
+.hero_secondarybtn:hover,
+.hero_secondarybtn:focus {
+    opacity: 0.7;
+}
+
+.hero_secondarybtn {
+    padding: 12px 16px;
+    border: 1px solid #FDFDFD;
+    text-decoration: none;
+    width: 300px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 4px;
+    color: white;
+    background-color: #1F212D;
+    margin: 8px 0;
+}
+
+.action_link {
+    text-decoration: none;
+    color: white;
+    padding: 12px 16px;
+}
+
+.beta {
+    font-size: 16px;
+    font-weight: 500;
+}

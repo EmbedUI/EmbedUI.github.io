@@ -2,16 +2,99 @@
 <html lang="en">
 
 <head>
+    <meta name="description" content="Fast-EmbedUI.github.io" />
+    <meta name="author" content="Vinod Mandavkar ( https://www.makervinod.in/ ) Devednya Vyas (devednyav.xyz)">
+    <meta name="keywords" content="Fast-EmbedUI, embed user interface, esp user interface, embedui library, embed ui,  arduino interface" />
+    <meta property="og:title" content="Fast-EmbedUI Library" />
+    <meta property="og:type" content="Open-Source Library" />
+    <meta property="og:url" content="fast-embedUI.github.io" />
+    <meta property="og:image" content="./img/description.png" />
+    <meta property="og:image:width" content="470" />
+    <meta property="og:image:height" content="246" />
+    <meta property="og:site_name" content="Fast-EmbedUI Library" />
+    <meta property="og:description" content="Fast-EmbedUI is an open source Project, for enthusiasts to speed-up & visualize UI development using Embedded Hardware on their PC/Laptop screens." />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast-EmbedUI</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body style="width: 100vw;height: 100vh;overflow: hidden;">
+<body>
+    <section class="hero">
+        <div class="container hero_flex">
+            <div class="hero_image">
+                <img src="./img/hero.png" alt="image with embedded board, ui and code block">
+            </div>
+            <div class="hero_content">
+                <!-- <span class="beta_tag">Beta</span> -->
+                <h1> Fast - EmbedUI <span class="beta"> (beta)</span> </h1>
+                <p> Fast-EmbedUI is an open source Project, for enthusiasts to speed-up & visualize UI development using Embedded Hardware on their PC/Laptop screens.</p>
+                <div class="hero_actions">
+                    <a href="https://github.com/Fast-EmbedUI/Fast-EmbedUI-Application"><button class="hero_primarybtn">Download Application</button></a>
+                    <a href="https://github.com/Fast-EmbedUI/Fast-EmbedUI-Hardware"><button class="hero_secondarybtn">Download Library</button></a>
+                    <a class="action_link" href="./documentation/">View Documentation</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <h1>Fast-EmbedUI</h1>
+    <section class="instructions">
+        <div class="container">
+            <h1>How it works</h1>
+            <p>Fast - EmbedUI uses <span class="teal_highlight">Arduino IDE (Download Arduino IDE)</span>. with the help of <span class="orange_highlight"> library API</span>, you can display shapes, fonts and create actionable buttons to drive hardware
+                actions through UI. View Instructions to create embed UI below</p>
+            <div class="flexrow_spacebetween">
+                <div class="flex">
+                    <div class="step_flex">
+                        <img class="" src="./img/step1.png" alt="">
+                        <div class="step_content">
+                            <h6>1. Download /Import library</h6>
+                            <p class="small">Import Fast-EmbedUI ZIP library in the <span class="teal_highlight">arduino IDE</span> by <span class="orange_highlight">following steps given here.</span></p>
+                        </div>
+                    </div>
+                    <div class="step_flex">
+                        <img class="" src="./img/step2.png" alt="">
+                        <div class="step_content">
+                            <h6>2. Code using Examples</h6>
+                            <p class="small">View <span class="orange_highlight">examples</span> in the IDE to get started after development burn code in the board.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="step_flex">
+                        <img class="" src="./img/step3.png" alt="">
+                        <div class="step_content">
+                            <h6>3. Download and install Application</h6>
+                            <p class="small"> <span class="orange_highlight">Download application</span> allow the permissions to communicate with the board</p>
+                        </div>
+                    </div>
+                    <div class="step_flex">
+                        <img class="" src="./img/step4.png" alt="">
+                        <div class="step_content">
+                            <h6>4. Configure and connect</h6>
+                            <p class="small">Set baud rate and comport to view the data on UI. Reset the board once connected to the application</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="flexrow_spacebetween">
+                <a href="mailto:makervinod@gmail.com">
+                    <h3>Open For colloboration and Feedback</h3>
+                </a>
+                <span>Made while experimenting 
+                  by<a class="footer_links" href="www.makervinod.in"> Maker vinod</a> & <a   class="footer_links"href="www.devednyav.xyz">Devednya Vyas</a></span>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
