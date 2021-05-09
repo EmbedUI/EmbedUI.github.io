@@ -16,7 +16,7 @@
     
     
       
-        <title>Supported hardware platforms - EmbedUI</title>
+        <title>Text - EmbedUI</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hardware-requirements" class="md-skip">
+        <a href="#text" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Supported hardware platforms
+              Text
             
           </span>
         </div>
@@ -238,14 +238,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       <label class="md-nav__link" for="__nav_2">
         Getting Started
@@ -261,21 +259,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../hardware_requirements/" class="md-nav__link">
         Supported hardware platforms
       </a>
-      
     </li>
   
 
@@ -382,12 +370,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       <label class="md-nav__link" for="__nav_4">
         UI Objects
@@ -403,11 +393,65 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../textObject/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Text
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Text
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#createtext" class="md-nav__link">
+    createText
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updatetext" class="md-nav__link">
+    updateText
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updatetextcolor" class="md-nav__link">
+    updateTextColor
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -485,6 +529,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#createtext" class="md-nav__link">
+    createText
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updatetext" class="md-nav__link">
+    updateText
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updatetextcolor" class="md-nav__link">
+    updateTextColor
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -496,66 +569,72 @@
               
                 
                 
-                <h1 id="hardware-requirements">Hardware Requirements</h1>
-<p>Supports the popular <strong>ESP32, ESP8266, STM32</strong> &amp; <strong>Arduino Boards</strong>. Any board programmed using Arduino IDE can be used.</p>
-<p>Boards having atleast <strong>4 kB</strong> of SRAM are preferred for error-free operation. </p>
-<p>You can even port the libraries to other <strong>Non-arduino IDE</strong> supported platforms easily, if required. </p>
-<p><br/>
-Following is the list of boards &amp; their support status for latest stable release:</p>
-<table>
-<thead>
-<tr>
-<th align="center">Board</th>
-<th align="center">Controller</th>
-<th align="center">Supported</th>
-<th align="center">Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">ESP32 DevKit v1</td>
-<td align="center">ESP32</td>
-<td align="center"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 20.42-6.21-6.21 2.83-2.83L9 14.77l9.88-9.89 2.83 2.83L9 20.42z"/></svg></span></td>
-<td align="center">-</td>
-</tr>
-<tr>
-<td align="center">NodeMCU</td>
-<td align="center">ESP8266</td>
-<td align="center"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 20.42-6.21-6.21 2.83-2.83L9 14.77l9.88-9.89 2.83 2.83L9 20.42z"/></svg></span></td>
-<td align="center">-</td>
-</tr>
-<tr>
-<td align="center">Arduino Uno</td>
-<td align="center">Atmega328P</td>
-<td align="center"><img alt="❓" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2753.svg" title=":question:" /></td>
-<td align="center">To be Tested</td>
-</tr>
-<tr>
-<td align="center">Arduino Nano</td>
-<td align="center">Atmega328P-AU</td>
-<td align="center"><img alt="❓" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2753.svg" title=":question:" /></td>
-<td align="center">To be Tested</td>
-</tr>
-<tr>
-<td align="center">Arduino Mega</td>
-<td align="center">Atmega2560</td>
-<td align="center"><img alt="❓" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2753.svg" title=":question:" /></td>
-<td align="center">To be Tested</td>
-</tr>
-<tr>
-<td align="center">Arduino MKR1000</td>
-<td align="center">-</td>
-<td align="center"><img alt="❓" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2753.svg" title=":question:" /></td>
-<td align="center">To be Tested</td>
-</tr>
-<tr>
-<td align="center">Arduino Zero</td>
-<td align="center">-</td>
-<td align="center"><img alt="❓" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2753.svg" title=":question:" /></td>
-<td align="center">To be Tested</td>
-</tr>
-</tbody>
-</table>
+                <h1 id="text">Text</h1>
+<hr />
+<h2 id="createtext"><strong><code>createText</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To create a new Text element</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>createText(</code></strong><code>String text_data, long font_size, long x, long y, uint32_t fg_color, bool hasBackground, uint32_t bg_color , long padding_x , long padding_y, bool center_align_x, bool center_align_y, String id</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>text_data</em></strong> : The String of the Text to be displayed</li>
+<li><em>long</em> <strong><em>font_size</em></strong> : The font size of the Text in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>x</em></strong> : The position of the Text from its top-left corner along x-axis (horizontal) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y</em></strong> : The position of the Text from its top-left corner along y-axis (vertical) of the screen in <strong><code>px</code></strong></li>
+<li><em>uint32_t</em> <strong><em>fg_color</em></strong> : The color of the Text to be displayed ( you can use the <a href="">color()</a> function to apply RGB values directly )</li>
+<li><em>bool</em> <strong><em>hasBackground</em></strong> : This flag should be set to <strong><code>true</code></strong> to set the background color of the Text</li>
+<li><em>uint32_t</em> <strong><em>bg_color</em></strong> : The color of the Background of the Text ( you can use the <a href="">color()</a> function to apply RGB values directly ). This will be only applied if <strong><code>hasBackground</code></strong> flag is set to <strong><code>true</code></strong></li>
+<li><em>long</em> <strong><em>padding_x</em></strong> : The padding on ledt &amp; right sides of the Text  in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>padding_y</em></strong> : The padding on top &amp; bottom sides of the Text  in <strong><code>px</code></strong></li>
+<li><em>bool</em> <strong><em>center_align_x</em></strong> : This flag should be set to <strong><code>true</code></strong> for the Text to center-align horizontally</li>
+<li><em>bool</em> <strong><em>center_align_y</em></strong> : This flag should be set to <strong><code>true</code></strong> for the Text to center-align vertically</li>
+<li><em>String</em> <strong><em>id</em></strong> : ID of the object as a String  </li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="updatetext"><strong><code>updateText</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To update/change the text of a pre-created Text element </p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>updateText(</code></strong><code>String id, String value</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>id</em></strong> : The ID of the pre-created Text</li>
+<li><em>String</em> <strong><em>value</em></strong> : The new value of the Text as a String</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="updatetextcolor"><strong><code>updateTextColor</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To update/change the color of a pre-created Text element</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>updateTextColor(</code></strong><code>String id, uint32_t new_color</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>id</em></strong> :  The ID of the pre-created Text</li>
+<li><em>uint32_t</em> <strong><em>new_color</em></strong> : The new color of the Text ( you can use the <a href="">color()</a> function to apply RGB values directly ). This will be only applied if <strong><code>hasBackground</code></strong> flag is set to <strong><code>true</code></strong></li>
+</ul>
+</li>
+</ul>
+<hr />
                 
               
               
