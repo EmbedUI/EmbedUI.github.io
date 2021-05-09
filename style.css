@@ -186,7 +186,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .flexrow_spacebetween {
@@ -268,4 +268,31 @@ footer a {
 
 .footer_about {
     margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 600px) {
+    .hero {
+        height: 100vh;
+        align-items: center;
+    }
+    .hero_flex {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+    .hero_content h1,
+    .hero_content p {}
+    .flexrow_spacebetween {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /* .step_flex {
+        flex-direction: column;
+    } */
 }
