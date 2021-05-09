@@ -24,6 +24,24 @@ h1 {
     margin: 0;
 }
 
+h6 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.small {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
 .container {
     width: 90%;
     max-width: 900px;
@@ -130,4 +148,81 @@ a {
 .beta {
     font-size: 16px;
     font-weight: 500;
+}
+
+.instructions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.flexrow_spacebetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.instructions_title {
+    text-align: center;
+}
+
+.instructions_caption {
+    max-width: 450px;
+    text-align: center;
+}
+
+.instructions_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.step_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.step_content {
+    margin: 0 16px;
+    max-width: 250px;
+}
+
+.step_content h6 {
+    margin-bottom: 8px;
+}
+
+
+/* 
+.flex_row {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+} */
+
+footer {
+    background-color: #1F212D;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+.orange_highlight {
+    color: #F05518;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.teal_highlight {
+    color: #0E767E;
+    text-decoration: underline;
+    font-weight: 600;
 }
