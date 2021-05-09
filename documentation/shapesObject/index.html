@@ -11,14 +11,14 @@
         <meta name="author" content="Maker Vinod, makervinodm@gmail.com">
       
       
-        <link rel="canonical" href="https://embedui.github.io/textObject/">
+        <link rel="canonical" href="https://embedui.github.io/shapesObject/">
       
       <link rel="icon" href="../img/new_logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.4">
     
     
       
-        <title>Text - EmbedUI</title>
+        <title>Shapes - EmbedUI</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#text" class="md-skip">
+        <a href="#shapes" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Text
+              Shapes
             
           </span>
         </div>
@@ -353,6 +353,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../textObject/" class="md-nav__link">
+        Text
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -365,12 +377,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Text
+          Shapes
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Text
+        Shapes
       </a>
       
         
@@ -388,22 +400,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#createtext" class="md-nav__link">
-    createText
+  <a href="#createline" class="md-nav__link">
+    createLine
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#updatetext" class="md-nav__link">
-    updateText
+  <a href="#createrect" class="md-nav__link">
+    createRect
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#updatetextcolor" class="md-nav__link">
-    updateTextColor
+  <a href="#createroundrect" class="md-nav__link">
+    createRoundRect
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#createfilledrect" class="md-nav__link">
+    createFilledRect
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#createfilledroundrect" class="md-nav__link">
+    createFilledRoundRect
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#createcircle" class="md-nav__link">
+    createCircle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#createfilledcircle" class="md-nav__link">
+    createFilledCircle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#createtriangle" class="md-nav__link">
+    createTriangle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#createfilledtriangle" class="md-nav__link">
+    createFilledTriangle
   </a>
   
 </li>
@@ -412,18 +466,6 @@
   
 </nav>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../shapesObject/" class="md-nav__link">
-        Shapes
-      </a>
     </li>
   
 
@@ -520,22 +562,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#createtext" class="md-nav__link">
-    createText
+  <a href="#createline" class="md-nav__link">
+    createLine
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#updatetext" class="md-nav__link">
-    updateText
+  <a href="#createrect" class="md-nav__link">
+    createRect
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#updatetextcolor" class="md-nav__link">
-    updateTextColor
+  <a href="#createroundrect" class="md-nav__link">
+    createRoundRect
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#createfilledrect" class="md-nav__link">
+    createFilledRect
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#createfilledroundrect" class="md-nav__link">
+    createFilledRoundRect
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#createcircle" class="md-nav__link">
+    createCircle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#createfilledcircle" class="md-nav__link">
+    createFilledCircle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#createtriangle" class="md-nav__link">
+    createTriangle
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#createfilledtriangle" class="md-nav__link">
+    createFilledTriangle
   </a>
   
 </li>
@@ -553,78 +637,240 @@
               
                 
                 
-                <h1 id="text">Text</h1>
+                <h1 id="shapes">Shapes</h1>
 <hr />
-<h2 id="createtext"><strong><code>createText</code></strong></h2>
+<h2 id="createline"><strong><code>createLine</code></strong></h2>
 <ul>
 <li>
-<p><strong>Use:</strong> To create a Text element</p>
+<p><strong>Use:</strong> To create a Line element</p>
 </li>
 <li>
-<p><strong>Definition:</strong> <strong><code>createText(</code></strong><code>String text_data, long font_size, long x, long y, uint32_t fg_color, bool hasBackground, uint32_t bg_color , long padding_x , long padding_y, bool center_align_x, bool center_align_y, String id</code><strong><code>)</code></strong>
+<p><strong>Definition:</strong> <strong><code>createLine(</code></strong><code>long x1, long y1, long x2, long y2, long line_thickness, uint32_t fill_color , String id</code><strong><code>)</code></strong>
    <br></p>
 </li>
 <li>
 <p><strong>Parameters:</strong></p>
 <ul>
-<li><em>String</em> <strong><em>text_data</em></strong> : The String of the Text to be displayed</li>
-<li><em>long</em> <strong><em>font_size</em></strong> : The font size of the Text in <strong><code>px</code></strong></li>
-<li><em>long</em> <strong><em>x</em></strong> : The position of the Text from its top-left corner along x-axis (horizontal) of the screen in <strong><code>px</code></strong></li>
-<li><em>long</em> <strong><em>y</em></strong> : The position of the Text from its top-left corner along y-axis (vertical) of the screen in <strong><code>px</code></strong></li>
-<li><em>uint32_t</em> <strong><em>fg_color</em></strong> : The color of the Text to be displayed ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly )</li>
-<li><em>bool</em> <strong><em>hasBackground</em></strong> : This flag should be set to <strong><code>true</code></strong> to set the background color of the Text</li>
-<li><em>uint32_t</em> <strong><em>bg_color</em></strong> : The color of the Background of the Text ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly ). This will be only applied if <strong><code>hasBackground</code></strong> flag is set to <strong><code>true</code></strong></li>
-<li><em>long</em> <strong><em>padding_x</em></strong> : The padding on left &amp; right sides of the Text  in <strong><code>px</code></strong></li>
-<li><em>long</em> <strong><em>padding_y</em></strong> : The padding on top &amp; bottom sides of the Text  in <strong><code>px</code></strong></li>
-<li><em>bool</em> <strong><em>center_align_x</em></strong> : This flag should be set to <strong><code>true</code></strong> for the Text to center-align horizontally</li>
-<li><em>bool</em> <strong><em>center_align_y</em></strong> : This flag should be set to <strong><code>true</code></strong> for the Text to center-align vertically</li>
-<li><em>String</em> <strong><em>id</em></strong> : ID of the Text element as a String  </li>
+<li><em>long</em> <strong><em>x1</em></strong> : The <strong>x1</strong> co-ordinate of the Line in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y1</em></strong> : The <strong>y1</strong> co-ordinate of the Line in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>x2</em></strong> : The <strong>x2</strong> co-ordinate of the Line in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y2</em></strong> : The <strong>y2</strong> co-ordinate of the Line in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>line_thickness</em></strong> : The thickness of the Line in <strong><code>px</code></strong></li>
+<li><em>uint32_t</em> <strong><em>fill_color</em></strong> : The color of the Line to be displayed ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly )</li>
+<li><em>String</em> <strong><em>id</em></strong> : ID of the Line element as a String  </li>
 </ul>
 </li>
 <li>
-<p><strong>Returns:</strong> ID of the Text element as a String    </p>
+<p><strong>Returns:</strong> ID of the Line element as a String</p>
 </li>
 </ul>
 <hr />
-<h2 id="updatetext"><strong><code>updateText</code></strong></h2>
+<h2 id="createrect"><strong><code>createRect</code></strong></h2>
 <ul>
 <li>
-<p><strong>Use:</strong> To update/change the text of a pre-created Text element </p>
+<p><strong>Use:</strong> To create a Outilned Rectangle element</p>
 </li>
 <li>
-<p><strong>Definition:</strong> <strong><code>updateText(</code></strong><code>String id, String value</code><strong><code>)</code></strong>
+<p><strong>Definition:</strong> <strong><code>createRect(</code></strong><code>long x, long y, long w, long h, long border_thickness, uint32_t b_color, String id</code><strong><code>)</code></strong>
    <br></p>
 </li>
 <li>
 <p><strong>Parameters:</strong></p>
 <ul>
-<li><em>String</em> <strong><em>id</em></strong> : The ID of the pre-created Text element</li>
-<li><em>String</em> <strong><em>value</em></strong> : The new value of the Text as a String</li>
+<li><em>long</em> <strong><em>x</em></strong> : The position of the Rectangle from its top-left corner along x-axis (horizontal) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y</em></strong> : The position of the Rectangle from its top-left corner along y-axis (vertical) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>w</em></strong> : The width of the Rectangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>h</em></strong> : The height of the Rectangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>border_thickness</em></strong> : The border thickness of the Rectangle in <strong><code>px</code></strong></li>
+<li><em>uint32_t</em> <strong><em>b_color</em></strong> : The border color of the Rectangle to be displayed ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly )</li>
+<li><em>String</em> <strong><em>id</em></strong> : ID of the Outlined Rectangle element as a String  </li>
 </ul>
 </li>
 <li>
-<p><strong>Returns:</strong> Nothing</p>
+<p><strong>Returns:</strong> ID of the Outlined Rectangle element as a String</p>
 </li>
 </ul>
 <hr />
-<h2 id="updatetextcolor"><strong><code>updateTextColor</code></strong></h2>
+<h2 id="createroundrect"><strong><code>createRoundRect</code></strong></h2>
 <ul>
 <li>
-<p><strong>Use:</strong> To update/change the color of a pre-created Text element</p>
+<p><strong>Use:</strong> To create a Outilned Round-Cornered Rectangle element</p>
 </li>
 <li>
-<p><strong>Definition:</strong> <strong><code>updateTextColor(</code></strong><code>String id, uint32_t new_color</code><strong><code>)</code></strong>
+<p><strong>Definition:</strong> <strong><code>createRoundRect(</code></strong><code>long x, long y, long w, long h, long border_thickness, long border_radius, uint32_t b_color , String id</code><strong><code>)</code></strong>
    <br></p>
 </li>
 <li>
 <p><strong>Parameters:</strong></p>
 <ul>
-<li><em>String</em> <strong><em>id</em></strong> :  The ID of the pre-created Text element</li>
-<li><em>uint32_t</em> <strong><em>new_color</em></strong> : The new color of the Text ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly ). This will be only applied if <strong><code>hasBackground</code></strong> flag is set to <strong><code>true</code></strong></li>
+<li><em>long</em> <strong><em>x</em></strong> : The position of the Rectangle from its top-left corner along x-axis (horizontal) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y</em></strong> : The position of the Rectangle from its top-left corner along y-axis (vertical) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>w</em></strong> : The width of the Rectangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>h</em></strong> : The height of the Rectangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>border_thickness</em></strong> : The border thickness of the Rectangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>border_radius</em></strong> : The border radius of the Rectangle in <strong><code>px</code></strong></li>
+<li><em>uint32_t</em> <strong><em>b_color</em></strong> : The border color of the Rectangle to be displayed ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly )</li>
+<li><em>String</em> <strong><em>id</em></strong> : ID of the Outlined Round-Cornered Rectangle element as a String  </li>
 </ul>
 </li>
 <li>
-<p><strong>Returns:</strong> Nothing</p>
+<p><strong>Returns:</strong> ID of the Outlined Round-Cornered Rectangle element as a String</p>
+</li>
+</ul>
+<hr />
+<h2 id="createfilledrect"><strong><code>createFilledRect</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To create a Filled Rectangle element</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>createFilledRect(</code></strong><code>long x, long y, long w, long h, uint32_t fill_color, String id</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>long</em> <strong><em>x</em></strong> : The position of the Rectangle from its top-left corner along x-axis (horizontal) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y</em></strong> : The position of the Rectangle from its top-left corner along y-axis (vertical) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>w</em></strong> : The width of the Rectangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>h</em></strong> : The height of the Rectangle in <strong><code>px</code></strong></li>
+<li><em>uint32_t</em> <strong><em>fill_color</em></strong> : The fill color of the Rectangle to be displayed ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly )</li>
+<li><em>String</em> <strong><em>id</em></strong> : ID of the Filled Rectangle element as a String  </li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> ID of the Filled Rectangle element as a String</p>
+</li>
+</ul>
+<hr />
+<h2 id="createfilledroundrect"><strong><code>createFilledRoundRect</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To create a Filled Round-Conered Rectangle element</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>createFilledRoundRect(</code></strong><code>long x, long y, long w, long h, long border_radius, uint32_t fill_color , String id</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>long</em> <strong><em>x</em></strong> : The position of the Rectangle from its top-left corner along x-axis (horizontal) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y</em></strong> : The position of the Rectangle from its top-left corner along y-axis (vertical) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>w</em></strong> : The width of the Rectangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>h</em></strong> : The height of the Rectangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>border_radius</em></strong> : The border radius of the Rectangle in <strong><code>px</code></strong></li>
+<li><em>uint32_t</em> <strong><em>fill_color</em></strong> : The fill color of the Rectangle to be displayed ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly )</li>
+<li><em>String</em> <strong><em>id</em></strong> : ID of the Outlined Round-Cornered Rectangle element as a String  </li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> ID of the Outlined Round-Cornered Rectangle element as a String   </p>
+</li>
+</ul>
+<hr />
+<p>String createCircle(long x, long y, long radius, long border_thickness, uint32_t b_color , String id);</p>
+<h2 id="createcircle"><strong><code>createCircle</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To create a Outlined Circle element</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>createCircle(</code></strong><code>long x, long y, long radius, long border_thickness, uint32_t b_color , String id</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>long</em> <strong><em>x</em></strong> : The position of the Circle from its center along x-axis (horizontal) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y</em></strong> : The position of the Circle from its center along y-axis (vertical) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>radius</em></strong> : The radius of the Circle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>border_thickness</em></strong> : The border radius of the Circle in <strong><code>px</code></strong></li>
+<li><em>uint32_t</em> <strong><em>b_color</em></strong> : The border color of the Circle to be displayed ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly )</li>
+<li><em>String</em> <strong><em>id</em></strong> : ID of the Outlined Circle element as a String  </li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> ID of the Outlined Circle element as a String  </p>
+</li>
+</ul>
+<hr />
+<h2 id="createfilledcircle"><strong><code>createFilledCircle</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To create a Filled Circle element</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>createFilledCircle(</code></strong><code>long x, long y, long radius, uint32_t fill_color, String id</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>long</em> <strong><em>x</em></strong> : The position of the Circle from its center along x-axis (horizontal) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y</em></strong> : The position of the Circle from its center along y-axis (vertical) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>radius</em></strong> : The radius of the Circle in <strong><code>px</code></strong></li>
+<li><em>uint32_t</em> <strong><em>fill_color</em></strong> : The fill color of the Circle to be displayed ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly )</li>
+<li><em>String</em> <strong><em>id</em></strong> : ID of the Filled Circle element as a String  </li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> ID of the Filled Circle element as a String  </p>
+</li>
+</ul>
+<hr />
+<h2 id="createtriangle"><strong><code>createTriangle</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To create a Outlined Triangle element</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>createTriangle(</code></strong><code>long x1, long y1, long x2, long y2, long x3, long y3,  long border_thickness, uint32_t b_color, String id</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>long</em> <strong><em>x1</em></strong> : The <strong>x1</strong> co-ordinate of the Triangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y1</em></strong> : The <strong>y1</strong> co-ordinate of the Triangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>x2</em></strong> : The <strong>x2</strong> co-ordinate of the Triangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y2</em></strong> : The <strong>y2</strong> co-ordinate of the Triangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>x3</em></strong> : The <strong>x3</strong> co-ordinate of the Triangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y3</em></strong> : The <strong>y3</strong> co-ordinate of the Triangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>border_thickness</em></strong> : The border radius of the Triangle in <strong><code>px</code></strong></li>
+<li><em>uint32_t</em> <strong><em>b_color</em></strong> : The border color of the Triangle to be displayed ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly )</li>
+<li><em>String</em> <strong><em>id</em></strong> : ID of the Outlined Triangle element as a String  </li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> ID of the Outlined Triangle element as a String  </p>
+</li>
+</ul>
+<hr />
+<h2 id="createfilledtriangle"><strong><code>createFilledTriangle</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To create a Filled Triangle element</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>createFilledTriangle(</code></strong><code>long x1, long y1, long x2, long y2, long x3, long y3, uint32_t fill_color, String id</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>long</em> <strong><em>x1</em></strong> : The <strong>x1</strong> co-ordinate of the Triangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y1</em></strong> : The <strong>y1</strong> co-ordinate of the Triangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>x2</em></strong> : The <strong>x2</strong> co-ordinate of the Triangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y2</em></strong> : The <strong>y2</strong> co-ordinate of the Triangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>x3</em></strong> : The <strong>x3</strong> co-ordinate of the Triangle in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y3</em></strong> : The <strong>y3</strong> co-ordinate of the Triangle in <strong><code>px</code></strong></li>
+<li><em>uint32_t</em> <strong><em>fill_color</em></strong> : The fill color of the Triangle to be displayed ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly )</li>
+<li><em>String</em> <strong><em>id</em></strong> : ID of the Filled Triangle element as a String  </li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> ID of the Filled Triangle element as a String </p>
 </li>
 </ul>
 <hr />
