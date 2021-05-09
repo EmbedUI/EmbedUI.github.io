@@ -24,6 +24,15 @@ h1 {
     margin: 0;
 }
 
+h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0;
+}
+
 h6 {
     font-family: 'DM Sans', sans-serif;
     font-style: normal;
@@ -46,6 +55,24 @@ h6 {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
+}
+
+.viewongit {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewongit img {
+    width: 36px;
+    height: 36px;
+    margin-right: 16px;
 }
 
 .hero {
@@ -121,7 +148,8 @@ a {
 .hero_primarybtn:hover,
 .hero_primarybtn:focus,
 .hero_secondarybtn:hover,
-.hero_secondarybtn:focus {
+.hero_secondarybtn:focus,
+a:hover {
     opacity: 0.7;
 }
 
@@ -212,6 +240,7 @@ a {
 footer {
     background-color: #1F212D;
     color: white;
+    padding: 50px 0;
 }
 
 footer a {
@@ -229,4 +258,14 @@ footer a {
     color: #0E767E;
     text-decoration: underline;
     font-weight: 600;
+}
+
+.footer_headline {
+    text-align: center;
+    size: 24px;
+    margin-bottom: 16px;
+}
+
+.footer_about {
+    margin-bottom: 16px;
 }
