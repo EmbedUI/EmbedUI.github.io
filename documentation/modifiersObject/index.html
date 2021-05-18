@@ -403,6 +403,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../videosObject/" class="md-nav__link">
+        Video
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../fontObject/" class="md-nav__link">
         Font
       </a>
@@ -485,6 +497,27 @@
         <li class="md-nav__item">
   <a href="#setopacity" class="md-nav__link">
     setOpacity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setrotation" class="md-nav__link">
+    setRotation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settransition" class="md-nav__link">
+    setTransition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openexternallink" class="md-nav__link">
+    openExternalLink
   </a>
   
 </li>
@@ -585,6 +618,27 @@
         <li class="md-nav__item">
   <a href="#setopacity" class="md-nav__link">
     setOpacity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setrotation" class="md-nav__link">
+    setRotation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settransition" class="md-nav__link">
+    setTransition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openexternallink" class="md-nav__link">
+    openExternalLink
   </a>
   
 </li>
@@ -727,6 +781,69 @@
 <ul>
 <li><em>String</em> <strong><em>id</em></strong> : ID of the element as a String</li>
 <li><em>int</em> <strong><em>opacity</em></strong> : The value of opacity in percentage <strong><code>(0-100)</code></strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> Nothing</p>
+</li>
+</ul>
+<hr />
+<h2 id="setrotation"><strong><code>setRotation</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To set the rotation of a pre-created element in the UI </p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>setRotation(</code></strong><code>String id, float degrees</code><strong><code>)</code></strong></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>id</em></strong> : ID of the element as a String</li>
+<li><em>float</em> <strong><em>degrees</em></strong> : Rotation angle in Degrees     </li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> Nothing</p>
+</li>
+</ul>
+<hr />
+<p>void setTransition(String id, int transition_type, unsigned long  transition_duration, unsigned long  transition_delay);</p>
+<h2 id="settransition"><strong><code>setTransition</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To set the rotation of a pre-created element in the UI </p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>setTransition(</code></strong><code>String id, int transition_type, unsigned long  transition_duration, unsigned long transition_delay</code><strong><code>)</code></strong></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>id</em></strong> : ID of the element as a String</li>
+<li><em>int</em> <strong><em>transition_type</em></strong> : The transition type to apply - <strong><code>LINEAR</code></strong>, <strong><code>SOFT</code></strong>, <strong><code>SOFT_START</code></strong>, <strong><code>SOFT_END</code></strong>, <strong><code>SOFT_START_END</code></strong></li>
+<li><em>unsigned long</em> <strong><em>transition_duration</em></strong> : The duration for which the transition runs in <code>milliseconds</code></li>
+<li><em>unsigned long</em> <strong><em>transition_delay</em></strong> : The delay duration after which the transition runs in <code>milliseconds</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> Nothing</p>
+</li>
+</ul>
+<hr />
+<p>void openExternalLink(String external_link);</p>
+<h2 id="openexternallink"><strong><code>openExternalLink</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To open an external link in the system browser from the UI application </p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>openExternalLink(</code></strong><code>String external_link</code><strong><code>)</code></strong></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>external_link</em></strong> : External Web link as a String</li>
 </ul>
 </li>
 <li>

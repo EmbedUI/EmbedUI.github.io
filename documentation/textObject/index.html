@@ -395,6 +395,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#createtextbox" class="md-nav__link">
+    createTextBox
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#updatetext" class="md-nav__link">
     updateText
   </a>
@@ -404,6 +411,62 @@
         <li class="md-nav__item">
   <a href="#updatetextcolor" class="md-nav__link">
     updateTextColor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updatetextfont" class="md-nav__link">
+    updateTextFont
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addunderline" class="md-nav__link">
+    addUnderline
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addstrikethrough" class="md-nav__link">
+    addStrikeThrough
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setfontweight" class="md-nav__link">
+    setFontWeight
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settextnormal" class="md-nav__link">
+    setTextNormal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settextbold" class="md-nav__link">
+    setTextBold
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settextitalic" class="md-nav__link">
+    setTextItalic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settextalignment" class="md-nav__link">
+    setTextAlignment
   </a>
   
 </li>
@@ -447,6 +510,18 @@
     <li class="md-nav__item">
       <a href="../imagesObject/" class="md-nav__link">
         Image
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../videosObject/" class="md-nav__link">
+        Video
       </a>
     </li>
   
@@ -527,6 +602,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#createtextbox" class="md-nav__link">
+    createTextBox
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#updatetext" class="md-nav__link">
     updateText
   </a>
@@ -536,6 +618,62 @@
         <li class="md-nav__item">
   <a href="#updatetextcolor" class="md-nav__link">
     updateTextColor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updatetextfont" class="md-nav__link">
+    updateTextFont
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addunderline" class="md-nav__link">
+    addUnderline
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addstrikethrough" class="md-nav__link">
+    addStrikeThrough
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setfontweight" class="md-nav__link">
+    setFontWeight
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settextnormal" class="md-nav__link">
+    setTextNormal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settextbold" class="md-nav__link">
+    setTextBold
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settextitalic" class="md-nav__link">
+    setTextItalic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settextalignment" class="md-nav__link">
+    setTextAlignment
   </a>
   
 </li>
@@ -586,6 +724,39 @@
 </li>
 </ul>
 <hr />
+<h2 id="createtextbox"><strong><code>createTextBox</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To create a Text Box (Multi-Line text) element</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>createTextBox(</code></strong><code>String text_data, long font_size, long x, long y, long w, long h, uint32_t text_color, bool hasBackground, uint32_t bg_color , long padding_x , long padding_y, bool center_align_x, bool center_align_y, String id</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>text_data</em></strong> : The String of the Text to be displayed</li>
+<li><em>long</em> <strong><em>font_size</em></strong> : The font size of the Text in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>x</em></strong> : The position of the Text from its top-left corner along x-axis (horizontal) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y</em></strong> : The position of the Text from its top-left corner along y-axis (vertical) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>w</em></strong> : The width of the Text Box in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>h</em></strong> : The height of the Text Box in <strong><code>px</code></strong></li>
+<li><em>uint32_t</em> <strong><em>text_color</em></strong> : The color of the Text to be displayed ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly )</li>
+<li><em>bool</em> <strong><em>hasBackground</em></strong> : This flag should be set to <strong><code>true</code></strong> to set the background color of the Text</li>
+<li><em>uint32_t</em> <strong><em>bg_color</em></strong> : The color of the Background of the Text ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly ). This will be only applied if <strong><code>hasBackground</code></strong> flag is set to <strong><code>true</code></strong></li>
+<li><em>long</em> <strong><em>padding_x</em></strong> : The padding on left &amp; right sides of the Text  in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>padding_y</em></strong> : The padding on top &amp; bottom sides of the Text  in <strong><code>px</code></strong></li>
+<li><em>bool</em> <strong><em>center_align_x</em></strong> : This flag should be set to <strong><code>true</code></strong> for the Text to center-align horizontally</li>
+<li><em>bool</em> <strong><em>center_align_y</em></strong> : This flag should be set to <strong><code>true</code></strong> for the Text to center-align vertically</li>
+<li><em>String</em> <strong><em>id</em></strong> : ID of the Text element as a String  </li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> ID of the Text Box element as a String    </p>
+</li>
+</ul>
+<hr />
 <h2 id="updatetext"><strong><code>updateText</code></strong></h2>
 <ul>
 <li>
@@ -620,7 +791,176 @@
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><em>String</em> <strong><em>id</em></strong> :  The ID of the pre-created Text element</li>
-<li><em>uint32_t</em> <strong><em>new_color</em></strong> : The new color of the Text ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly ). This will be only applied if <strong><code>hasBackground</code></strong> flag is set to <strong><code>true</code></strong></li>
+<li><em>uint32_t</em> <strong><em>new_color</em></strong> : The new color of the Text ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly )</li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> Nothing</p>
+</li>
+</ul>
+<hr />
+<h2 id="updatetextfont"><strong><code>updateTextFont</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To update/change the font of a pre-created Text element</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>updateTextFont(</code></strong><code>String id, Font font</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>id</em></strong> :  The ID of the pre-created Text element</li>
+<li><em>Font</em> <strong><em>font</em></strong> : The new font for the Text. You need to pass a pre-created font object to it</li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> Nothing</p>
+</li>
+</ul>
+<hr />
+<h2 id="addunderline"><strong><code>addUnderline</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To add underline to a pre-created Text element</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>addUnderline(</code></strong><code>String id, uint32_t color</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>id</em></strong> :  The ID of the pre-created Text element</li>
+<li><em>uint32_t</em> <strong><em>color</em></strong> : The color for the underline ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly )</li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> Nothing</p>
+</li>
+</ul>
+<hr />
+<h2 id="addstrikethrough"><strong><code>addStrikeThrough</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To add strike-through to a pre-created Text element</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>addStrikeThrough(</code></strong><code>String id, uint32_t color</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>id</em></strong> :  The ID of the pre-created Text element</li>
+<li><em>uint32_t</em> <strong><em>color</em></strong> : The color for the strike-through ( you can use the <a href="../displayObject/#color">color()</a> function to apply RGB values directly )</li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> Nothing</p>
+</li>
+</ul>
+<hr />
+<h2 id="setfontweight"><strong><code>setFontWeight</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To add strike-through to a pre-created Text element</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>setFontWeight(</code></strong><code>String id, int font_weight</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>id</em></strong> :  The ID of the pre-created Text element</li>
+<li><em>int</em> <strong><em>font_weight</em></strong> : The font-weight for the Text. Supported values are: <strong><code>100,200,300,400,500,600,700,800,900</code></strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> Nothing</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This feature depends on the font family &amp; is only applicable if the font supports it.</p>
+</div>
+<hr />
+<h2 id="settextnormal"><strong><code>setTextNormal</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To set the font-style of a pre-created Text element to Normal (Removes Bold &amp; Italics Styles)</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>setTextNormal(</code></strong><code>String id</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>id</em></strong> :  The ID of the pre-created Text element</li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> Nothing</p>
+</li>
+</ul>
+<hr />
+<h2 id="settextbold"><strong><code>setTextBold</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To set the font-style of a pre-created Text element to Bold</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>setTextBold(</code></strong><code>String id</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>id</em></strong> :  The ID of the pre-created Text element</li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> Nothing</p>
+</li>
+</ul>
+<hr />
+<h2 id="settextitalic"><strong><code>setTextItalic</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To set the font-style of a pre-created Text element to Italic</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>setTextItalic(</code></strong><code>String id</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>id</em></strong> :  The ID of the pre-created Text element</li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> Nothing</p>
+</li>
+</ul>
+<hr />
+<h2 id="settextalignment"><strong><code>setTextAlignment</code></strong></h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To set the alignment  of a pre-created Text element</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>setTextAlignment(</code></strong><code>String id, int alignment</code><strong><code>)</code></strong>
+   <br></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>id</em></strong> :  The ID of the pre-created Text element</li>
+<li><em>int</em> <strong><em>alignment</em></strong> : The alignment of the Text. Supported values are: <strong><code>CENTER_ALIGN, LEFT_ALIGN, RIGHT_ALIGN, JUSTIFY_TEXT</code></strong></li>
 </ul>
 </li>
 <li>

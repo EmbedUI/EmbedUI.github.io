@@ -430,10 +430,29 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#createimagefromfile" class="md-nav__link">
+    createImageFromFile
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../videosObject/" class="md-nav__link">
+        Video
+      </a>
     </li>
   
 
@@ -512,6 +531,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#createimagefromfile" class="md-nav__link">
+    createImageFromFile
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -538,7 +564,7 @@
 <li>
 <p><strong>Parameters:</strong></p>
 <ul>
-<li><em>String</em> <strong><em>button_text</em></strong> : The text to be displayed on the Button as a String   </li>
+<li><em>String</em> <strong><em>link</em></strong> : The external link of the Image to load from    </li>
 <li><em>long</em> <strong><em>x</em></strong> : The position of the Image from its top-left corner along x-axis (horizontal) of the screen in <strong><code>px</code></strong></li>
 <li><em>long</em> <strong><em>y</em></strong> : The position of the Image from its top-left corner along y-axis (vertical) of the screen in <strong><code>px</code></strong></li>
 <li><em>long</em> <strong><em>w</em></strong> : The width of the Image in <strong><code>px</code></strong></li>
@@ -550,6 +576,38 @@
 <p><strong>Returns:</strong> ID of the Image element as a String</p>
 </li>
 </ul>
+<hr />
+<h2 id="createimagefromfile">createImageFromFile</h2>
+<ul>
+<li>
+<p><strong>Use:</strong> To create an Image element using an internal/local image file</p>
+</li>
+<li>
+<p><strong>Definition:</strong> <strong><code>createImageFromFile(</code></strong><code>String file_name, long x, long y, long w, long h,  String id</code><strong><code>)</code></strong></p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><em>String</em> <strong><em>file_name</em></strong> : The inetrnal/local file name of the Image with extension <code>eg: myImage.jpg</code>     </li>
+<li><em>long</em> <strong><em>x</em></strong> : The position of the Image from its top-left corner along x-axis (horizontal) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>y</em></strong> : The position of the Image from its top-left corner along y-axis (vertical) of the screen in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>w</em></strong> : The width of the Image in <strong><code>px</code></strong></li>
+<li><em>long</em> <strong><em>h</em></strong> : The height of the Image in <strong><code>px</code></strong> </li>
+<li><em>String</em> <strong><em>id</em></strong> : The ID of the Image element</li>
+</ul>
+</li>
+<li>
+<p><strong>Returns:</strong> ID of the Image element as a String</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before using this feature, make sure the images are copied in the images folder of EmbedUI</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>You can click the Assets icon in the menu bar of the application to open the Assets folder. You can find the EmbedUI folder in <code>My Documents &gt; EmbedUi</code>     </p>
+</div>
 <hr />
                 
               
